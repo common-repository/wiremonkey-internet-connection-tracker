@@ -1,0 +1,108 @@
+.tostie-toast{
+    top:0;
+	left:0;
+    width:100%;
+	font-family:Arial;
+	   position: fixed;
+    z-index: 99999999999999999;
+        display: block;
+        
+}
+.tostie-toast > div{
+	color:#FFFFFF !important;
+	background-color:gray;
+	padding:5px 0 5px 10px;
+	text-align: center;
+	/*margin-bottom:10px;*/
+
+}
+
+.tostie-toast .toast-close{
+	color:#FFFFFF ;
+	width:100%;
+	height:100%;
+	display:block;
+	text-decoration:none;
+}
+
+.tostie-toast .success{
+	background-color:#00bf0a;
+}
+.tostie-toast .notice{
+	background-color:#0086c4;
+}
+.tostie-toast .warning{
+	background-color:#d3d600;
+}
+.tostie-toast .error{
+	background-color:#e00000;
+}
+
+.tostie-toast .light.success{
+	background-color:#FFFFFF;
+	color:#00bf0a !important;
+}
+.tostie-toast .light.notice{
+	background-color:#FFFFFF;
+	color:#0086c4 !important;
+}
+.tostie-toast .light.warning{
+	background-color:#FFFFFF;
+	color:#d3d600 !important;
+}
+.tostie-toast .light.error{
+	background-color:#FFFFFF;
+	color:#e00000 !important;
+}
+
+.tostie-toast .light.success .toast-close{
+	color:#00bf0a !important;
+}
+.tostie-toast .light.notice .toast-close{
+	color:#0086c4 !important;
+}
+
+.toast-close span{
+	display: inline-block;
+		font-size:16px;
+	font-weight:400;
+	    line-height: 25px;
+
+}
+
+.toast-close span *{
+	float:left;
+}
+
+.tostie-toast .toast-close i.icon{
+	height: 21px;
+    width: 20px;
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.tostie-toast .light.notice .toast-close i.icon{
+	background-image: url("../../img/no-wifi-light.png") !important;
+}
+
+.tostie-toast .notice .toast-close i.icon{
+	background-image: url("../../img/no-wifi.png");
+}
+
+.tostie-toast .light.success .toast-close i.icon{
+	background-image: url("../../img/wifi-light.png") !important;
+}
+
+.tostie-toast .success .toast-close i.icon{
+	background-image: url("../../img/wifi.png");
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .tostie-toast.top {
+    top:auto !important;
+	bottom:0 !important;
+	}
+}
